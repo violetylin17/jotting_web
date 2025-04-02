@@ -3,57 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的日記</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ffafbd, #ffc3a0);
-            text-align: center;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 10px 0;
-        }
-        .content {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            color: #fff;
-            background: #ff6f61;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .button:hover {
-            background: #ff3b2e;
-        }
-    </style>
+    <title>文章分享平台</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>歡迎來到我的日記</h1>
+        <h1>歡迎來到文章分享平台</h1>
     </header>
     <div class="content">
-        <p>記錄生活的點滴，分享你的心情與回憶。</p>
-        <a href="diary.html" class="button">開始寫日記</a>
+        <p>在這裡分享你的日記、食譜、回憶與小說，讓大家一同感受你的故事！</p>
+        <button class="button" onclick="navigate('diary.html')">寫日記</button>
+        <button class="button" onclick="navigate('recipe.html')">分享食譜</button>
+        <button class="button" onclick="navigate('memory.html')">回憶分享</button>
+        <button class="button" onclick="navigate('novel.html')">發表小說</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
